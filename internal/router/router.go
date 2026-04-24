@@ -12,6 +12,8 @@ var HandlersMap = map[string]Handler{
 	"PING": handlers.PingHandler,
 	"ECHO": handlers.EchoHandler,
 	"QUIT": handlers.QuitHandler,
+	"GET":  handlers.GetHandler,
+	"SET":  handlers.SetHandler,
 }
 
 func Routing(msg string) (string, error) {

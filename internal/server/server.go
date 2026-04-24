@@ -24,7 +24,7 @@ func HandleClient(conn net.Conn) {
 		}
 		if err != nil {
 
-			conn.Write([]byte("-dont get answer, error:" + err.Error() + "\n"))
+			conn.Write([]byte("-ERR dont get answer, error:" + err.Error() + "\n"))
 
 			log.Println("ошибка для клиента: ", err)
 
