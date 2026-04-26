@@ -1,0 +1,12 @@
+SET nozdrin chita
+SET nozdrin chita
+SET vadim blua
+SET gogogo nozdria
+SET yy uirui
+LPUSH vadik 1 3 8 9 0 d d d d
+LPUSH vadik 7 52
+DEL vadik
+LPUSH ggggg 6 5 4 2
+LPUSH gggggr 4 6 5 55
+DEL ggggg gggggr
+RPOP ggggg

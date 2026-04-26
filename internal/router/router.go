@@ -9,11 +9,18 @@ import (
 type Handler func(msgArgs []string) (string, error)
 
 var HandlersMap = map[string]Handler{
-	"PING": handlers.PingHandler,
-	"ECHO": handlers.EchoHandler,
-	"QUIT": handlers.QuitHandler,
-	"GET":  handlers.GetHandler,
-	"SET":  handlers.SetHandler,
+	"PING":   handlers.PingHandler,
+	"ECHO":   handlers.EchoHandler,
+	"QUIT":   handlers.QuitHandler,
+	"GET":    handlers.GetHandler,
+	"SET":    handlers.SetHandler,
+	"DEL":    handlers.DelHandler,
+	"LPUSH":  handlers.LPushHandler,
+	"RPUSH":  handlers.RPushHandler,
+	"LRANGE": handlers.LRangeHandler,
+	"LLEN":   handlers.LLenHandler,
+	"LPOP":   handlers.LPopHandler,
+	"RPOP":   handlers.RPopHandler,
 }
 
 func Routing(msg string) (string, error) {
