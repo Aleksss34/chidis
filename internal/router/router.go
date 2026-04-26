@@ -21,6 +21,8 @@ var HandlersMap = map[string]Handler{
 	"LLEN":   handlers.LLenHandler,
 	"LPOP":   handlers.LPopHandler,
 	"RPOP":   handlers.RPopHandler,
+	"EXPIRE": handlers.ExpireHandler,
+	"TTL":    handlers.TtlHandler,
 }
 
 func Routing(msg string) (string, error) {

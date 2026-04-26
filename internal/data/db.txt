@@ -10,3 +10,25 @@ LPUSH ggggg 6 5 4 2
 LPUSH gggggr 4 6 5 55
 DEL ggggg gggggr
 RPOP ggggg
+SET hh nozdrin
+SET fgf ghg ex 20
+DEL fgf
+SET vadimka 228 ex 20
+DEL vadimka
+SET dima lovilkino ex 20
+DEL dima
+SET vladimir chita ex 60
+DEL vladimir
+SET gg 52
+Expire resetly gg 1777222776
+DEL gg
+SET resetly vlados huy ex 60
+DEL vlados
+DEL vlados
+DEL vlados
+SET resetly paltos hueta ex 60
+DEL paltos
+DEL vlados
+DEL paltos
+SET resetly paltos 228 ex 60
+DEL paltos

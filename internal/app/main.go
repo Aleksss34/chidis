@@ -33,6 +33,7 @@ func RunServer() {
 	}
 	log.Println("сервер успешно запущен")
 	defer listener.Close()
+	go storage.TickExpired()
 	for {
 		conn, err := listener.Accept()
 		if err != nil {
